@@ -413,6 +413,7 @@
     $('.dropdown-menu a').click(function(e){
         loadData($(this).data('source'));
         $('.dropdown > a').html($(this).html());
+        lozad().observe();
     });
 
     var href = "";
